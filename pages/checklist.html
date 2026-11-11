@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ショップカードの入稿前に確認する6項目のチェックリストです。">
+  <title>入稿前チェック | はじめての印刷室</title>
+  <link rel="stylesheet" href="../assets/css/index.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+  <link rel="stylesheet" href="../assets/css/checklist.css">
+  <script src="../assets/js/checklist.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へスキップ</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="../">はじめての印刷室</a>
+      <a class="button button-primary header-check" href="checklist.html" aria-current="page">入稿前チェック</a>
+    </div>
+  </header>
+  <main class="container main-content article-content" id="main" tabindex="-1">
+    <header class="article-intro">
+      <p class="eyebrow">ショップカード</p>
+      <h1>入稿前チェック</h1>
+      <p>注文先の入稿ガイドと自分のデータを見比べ、確認できた項目にチェックを入れます。</p>
+    </header>
+    <section class="home-section" aria-labelledby="check-progress">
+      <h2 id="check-progress">確認状況</h2>
+      <p id="check-count" role="status">確認済み 0 / 6 件</p>
+      <progress id="check-meter" aria-labelledby="check-progress" value="0" max="6"></progress>
+      <p id="check-storage">チェックはこのブラウザに保存されます。</p>
+      <button class="button section-button check-reset" type="button" hidden>すべてのチェックを外す</button>
+      <noscript><p>チェックの保存にはJavaScriptが必要です。</p></noscript>
+    </section>
+    <section class="home-section" aria-labelledby="check-stage-1">
+      <svg class="icon icon-tile" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 16l13-13 5 5-13 13z m7-7l2 2m1-5l2 2m-8 4l2 2"/></svg>
+      <h2 id="check-stage-1" class="article-accent">01　仕様を決める</h2>
+      <ul class="check-grid" role="list">
+        <li class="check-card">
+          <label class="check-label"><input type="checkbox" id="size-and-sides"> サイズと片面・両面</label>
+          <a class="button" href="articles/size-and-sides.html#checklist" aria-label="サイズと片面・両面の解説を読む">解説を読む</a>
+        </li>
+        <li class="check-card">
+          <label class="check-label"><input type="checkbox" id="paper"> 用紙</label>
+          <a class="button" href="articles/paper.html#checklist" aria-label="用紙の解説を読む">解説を読む</a>
+        </li>
+      </ul>
+    </section>
+    <section class="home-section" aria-labelledby="check-stage-2">
+      <svg class="icon icon-tile" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l2-7 10-10 5 5-10 10z m9-14l5 5m-12 2l5 5"/></svg>
+      <h2 id="check-stage-2" class="article-accent">02　データを作る</h2>
+      <ul class="check-grid" role="list">
+        <li class="check-card">
+          <label class="check-label"><input type="checkbox" id="bleed-and-text"> 塗り足しと文字の位置</label>
+          <a class="button" href="articles/bleed-and-text.html#checklist" aria-label="塗り足しと文字の位置の解説を読む">解説を読む</a>
+        </li>
+        <li class="check-card">
+          <label class="check-label"><input type="checkbox" id="image-color-text"> 画像・色・文字の設定</label>
+          <a class="button" href="articles/image-color-text.html#checklist" aria-label="画像・色・文字の設定の解説を読む">解説を読む</a>
+        </li>
+      </ul>
+    </section>
+    <section class="home-section" aria-labelledby="check-stage-3">
+      <svg class="icon icon-tile" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15v-12m-5 5l5-5 5 5m-13 6v6h16v-6"/></svg>
+      <h2 id="check-stage-3" class="article-accent">03　入稿する</h2>
+      <ul class="check-grid" role="list">
+        <li class="check-card">
+          <label class="check-label"><input type="checkbox" id="export"> 指定形式での書き出し</label>
+          <a class="button" href="articles/export.html#checklist" aria-label="指定形式での書き出しの解説を読む">解説を読む</a>
+        </li>
+        <li class="check-card">
+          <label class="check-label"><input type="checkbox" id="submission-requirements"> 印刷会社の入稿条件との照合</label>
+          <a class="button" href="articles/submission-requirements.html#checklist" aria-label="印刷会社の入稿条件との照合の解説を読む">解説を読む</a>
+        </li>
+      </ul>
+    </section>
+    <section class="home-section" aria-labelledby="before-send">
+      <h2 id="before-send" class="article-accent">すべて確認したら</h2>
+      <p class="article-note">送信前に、注文する商品と印刷会社の最新の入稿条件をもう一度確認してください。</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="wordmark" href="../">はじめての印刷室</a>
+      <nav aria-label="フッターメニュー">
+        <ul class="footer-menu">
+          <li><a href="../">トップ</a></li>
+          <li><a href="guides.html">ガイド一覧</a></li>
+          <li><a href="checklist.html">入稿前チェック</a></li>
+          <li><a href="about.html">はじめての印刷室について</a></li>
+        </ul>
+      </nav>
+      <small>© はじめての印刷室</small>
+    </div>
+  </footer>
+</body>
+</html>

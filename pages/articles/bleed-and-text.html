@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ショップカードの塗り足しと、文字やロゴを置く範囲を図で確認できます。">
+  <title>塗り足しと文字の位置 | はじめての印刷室</title>
+  <link rel="stylesheet" href="../../assets/css/index.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へスキップ</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="../../">はじめての印刷室</a>
+      <a class="button button-primary header-check" href="../checklist.html">入稿前チェック</a>
+    </div>
+  </header>
+  <main class="container main-content article-content" id="main" tabindex="-1">
+    <article id="checklist">
+      <header class="article-intro">
+        <p class="eyebrow">02　データを作る</p>
+        <h1>塗り足しと文字の位置</h1>
+        <p>背景は仕上がり線の外まで伸ばし、文字やロゴは内側に余裕を持たせます。</p>
+      </header>
+
+      <section class="home-section" aria-labelledby="bleed-guides">
+        <svg class="icon icon-tile" viewBox="0 0 24 24" aria-hidden="true"><path d="m3 8 9-5 9 5-9 5-9-5Zm0 4 9 5 9-5M3 16l9 5 9-5"/></svg>
+        <h2 id="bleed-guides" class="article-accent">塗り足しとガイド線</h2>
+        <div class="bleed-overview">
+          <svg class="article-diagram" viewBox="0 0 327 180" role="img" aria-label="外側から、塗り足しの外端、仕上がり線、文字やロゴを置く範囲の目安を示した図">
+            <defs>
+              <g id="print-guides">
+                <rect class="diagram-line" x="51.5" y="27.5" width="224" height="125"/>
+                <rect class="diagram-trim" x="59.5" y="35.5" width="208" height="109"/>
+                <path class="diagram-trim" transform="translate(24)" d="M9 27h17m-17 8h17m1-26v17m8-17v17m218 1h17m-17 8h17m-26-26v17m8-17v17m-243 119h17m-17 8h17m1 1v17m8-17v17m218-26h17m-17 8h17m-26 1v17m8-17v17m-112.5-162v17m-9.5-9h19m-9.5 137v17m-9.5-8h19m-140-73h17m-9-9v18m236-9h17m-8-9v18"/>
+              </g>
+            </defs>
+            <rect class="diagram-tint" x="51" y="27" width="225" height="126"/>
+            <use href="#print-guides"/>
+            <rect class="diagram-line diagram-safe" x="70" y="46" width="187" height="88"/>
+            <text class="diagram-wordmark" x="163.5" y="95">Lune &amp; Mie</text>
+          </svg>
+          <ul class="article-note guide-legend" role="list">
+            <li><span aria-hidden="true"></span>塗り足しの外端</li>
+            <li><span class="legend-trim" aria-hidden="true"></span>仕上がり線</li>
+            <li><span class="legend-safe" aria-hidden="true"></span>文字・ロゴを置く範囲の目安</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="home-section" aria-labelledby="bleed-steps">
+        <svg class="icon icon-tile" viewBox="0 0 24 24" aria-hidden="true"><path d="m3 7 2 2 4-4m3 2h9M3 16l2 2 4-4m3 2h9"/></svg>
+        <h2 id="bleed-steps">自分のデータで確認する</h2>
+        <ol class="article-columns article-steps" role="list">
+          <li class="article-stack">
+            <h3>1. 青い外枠まで背景を伸ばす</h3>
+            <p>背景が指定の塗り足し位置まで伸びているか確認します。</p>
+            <svg class="article-diagram" viewBox="0 0 327 180" role="img" aria-label="仕上がり線を越えて、背景を外側の青い線まで伸ばす図">
+              <rect class="diagram-tint" x="51" y="27" width="225" height="126"/>
+              <use href="#print-guides"/>
+              <path class="diagram-line diagram-arrows" transform="translate(24)" d="M139.5 60v-31m-4 4 4-4 4 4m-4 87v31m-4-4 4 4 4-4m-80.5-57h-34m4-4-4 4 4 4m183-4h34m-4-4 4 4-4 4"/>
+            </svg>
+          </li>
+          <li class="article-stack">
+            <h3>2. 文字・ロゴは青い破線の内側へ</h3>
+            <p>文字やロゴが仕上がり線に近すぎないか確認します。</p>
+            <svg class="article-diagram" viewBox="0 0 327 180" role="img" aria-label="店名を仕上がり線から離し、青い破線の内側に置いた図">
+              <use href="#print-guides"/>
+              <rect class="diagram-shape diagram-safe" x="70" y="46" width="187" height="88"/>
+              <text class="diagram-wordmark" x="163.5" y="95">Lune &amp; Mie</text>
+            </svg>
+          </li>
+        </ol>
+        <aside class="article-note" aria-label="寸法の注意書き">
+          <p>具体的な寸法は、注文先のテンプレートで確認してください。</p>
+        </aside>
+      </section>
+
+      <nav class="home-section article-actions" aria-label="記事ナビゲーション">
+        <a class="button button-primary section-button checklist-return" href="../checklist.html#bleed-and-text">チェック項目に戻る</a>
+        <a class="button section-button guide-return" href="../guides.html">ガイド一覧に戻る</a>
+        <a class="button button-primary section-button" href="image-color-text.html">次の記事を読む</a>
+      </nav>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="wordmark" href="../../">はじめての印刷室</a>
+      <nav aria-label="フッターメニュー">
+        <ul class="footer-menu">
+          <li><a href="../../">トップ</a></li>
+          <li><a href="../guides.html">ガイド一覧</a></li>
+          <li><a href="../checklist.html">入稿前チェック</a></li>
+          <li><a href="../about.html">はじめての印刷室について</a></li>
+        </ul>
+      </nav>
+      <small>© はじめての印刷室</small>
+    </div>
+  </footer>
+</body>
+</html>

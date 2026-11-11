@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ショップカードづくりのガイドを、キーワードや工程から探せます。">
+  <title>ガイド一覧 | はじめての印刷室</title>
+  <link rel="stylesheet" href="../assets/css/index.css">
+  <link rel="stylesheet" href="../assets/css/guides.css">
+  <script src="../assets/js/guides.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へスキップ</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="../">はじめての印刷室</a>
+      <a class="button button-primary header-check" href="checklist.html">入稿前チェック</a>
+    </div>
+  </header>
+  <main class="container main-content" id="main" tabindex="-1">
+    <p class="eyebrow">ショップカード入稿ガイド</p>
+    <h1>ガイド一覧</h1>
+
+    <section class="home-section" id="guide-controls" aria-label="ガイドを探す" hidden>
+      <form class="guide-search" role="search" action="guides.html">
+        <label for="guide-query">キーワードで探す</label>
+        <div class="search-row">
+          <div class="search-field">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg>
+            <input id="guide-query" name="q" type="search" placeholder="例：用紙、塗り足し">
+          </div>
+          <button class="button button-primary" type="submit">検索する</button>
+        </div>
+        <fieldset>
+          <legend>工程で絞る</legend>
+          <div class="stage-filters">
+            <label><input type="radio" name="stage" value="" checked><span class="button">すべて</span></label>
+            <label><input type="radio" name="stage" value="specification"><span class="button">仕様を決める</span></label>
+            <label><input type="radio" name="stage" value="design"><span class="button">データを作る</span></label>
+            <label><input type="radio" name="stage" value="submission"><span class="button">入稿する</span></label>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+
+    <section class="home-section guide-results" aria-label="ガイドの検索結果">
+      <p class="guide-count" role="status">6件</p>
+      <ul class="guide-grid" role="list">
+        <li class="guide-card" data-stage="specification" data-keywords="寸法 片面 両面 表 裏 QRコード">
+          <p class="eyebrow">01　仕様を決める</p>
+          <h2><a href="articles/size-and-sides.html">サイズと片面・両面</a></h2>
+          <p>使い方に合わせて大きさと印刷面を決める。</p>
+        </li>
+        <li class="guide-card" data-stage="specification" data-keywords="紙 コート マット 上質紙 光沢 厚さ サンプル">
+          <p class="eyebrow">01　仕様を決める</p>
+          <h2><a href="articles/paper.html">用紙の選び方</a></h2>
+          <p>紙の厚さと手触りを比べる。</p>
+        </li>
+        <li class="guide-card" data-stage="design" data-keywords="塗り足し トンボ 仕上がり線 余白 ロゴ">
+          <p class="eyebrow">02　データを作る</p>
+          <h2><a href="articles/bleed-and-text.html">塗り足しと文字の位置</a></h2>
+          <p>仕上がり線を見ながら配置を確認する。</p>
+        </li>
+        <li class="guide-card" data-stage="design" data-keywords="画像 写真 解像度 CMYK RGB フォント アウトライン">
+          <p class="eyebrow">02　データを作る</p>
+          <h2><a href="articles/image-color-text.html">画像・色・文字の設定</a></h2>
+          <p>データを作るときの設定を確認する。</p>
+        </li>
+        <li class="guide-card" data-stage="submission" data-keywords="PDF 保存 ファイル形式 表裏">
+          <p class="eyebrow">03　入稿する</p>
+          <h2><a href="articles/export.html">指定形式での書き出し</a></h2>
+          <p>注文先が受け付ける形式で保存する。</p>
+        </li>
+        <li class="guide-card" data-stage="submission" data-keywords="印刷会社 入稿条件 チェック ファイル 注文">
+          <p class="eyebrow">03　入稿する</p>
+          <h2><a href="articles/submission-requirements.html">印刷会社の入稿条件との照合</a></h2>
+          <p>注文先のガイドと入稿データを見比べる。</p>
+        </li>
+      </ul>
+      <div class="guide-empty" hidden>
+        <h2>記事が見つかりませんでした</h2>
+        <p>キーワードや工程を変えて探せます。</p>
+        <button class="button section-button" type="button" id="clear-filters">条件を解除</button>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="wordmark" href="../">はじめての印刷室</a>
+      <nav aria-label="フッターメニュー">
+        <ul class="footer-menu">
+          <li><a href="../">トップ</a></li>
+          <li><a href="guides.html" aria-current="page">ガイド一覧</a></li>
+          <li><a href="checklist.html">入稿前チェック</a></li>
+          <li><a href="about.html">はじめての印刷室について</a></li>
+        </ul>
+      </nav>
+      <small>© はじめての印刷室</small>
+    </div>
+  </footer>
+</body>
+</html>

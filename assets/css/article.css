@@ -1,0 +1,108 @@
+.article-content {
+  --article-max: 50rem;
+  --qr-paper: #ffffff;
+  --qr-ink: #172d53;
+  width: min(calc(100% - 2 * var(--md)), var(--article-max));
+}
+
+.article-intro, .card-example, .article-stack { display: grid; gap: var(--xs); }
+.article-intro { gap: var(--sm); }
+.article-accent, .article-content h3 { color: var(--accent); }
+.article-content h3 { font-size: var(--body); }
+.card-examples, .article-columns { display: grid; gap: var(--lg); }
+.card-examples { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--sm); }
+
+.sample-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 6rem;
+  padding: var(--xs);
+  border: var(--rule) solid var(--line);
+  background: var(--card-paper);
+  font-size: var(--caption);
+  font-weight: 700;
+}
+
+.sample-back { gap: var(--xs); }
+.sample-qr { display: grid; justify-items: center; gap: 0.125rem; font-size: 0.625rem; text-decoration: none; }
+.sample-qr svg { width: 3.375rem; height: 3.375rem; background: var(--qr-paper); fill: var(--qr-ink); }
+.article-steps { margin: 0; padding: 0; list-style: none; }
+
+.article-diagram {
+  display: block;
+  width: 100%;
+  background: var(--card-paper);
+}
+
+.article-diagram text { font: 13px var(--font); text-anchor: middle; fill: var(--ink); }
+.diagram-shape, .diagram-line { stroke: var(--accent); }
+.diagram-shape { fill: var(--accent-soft); }
+.diagram-line { fill: none; }
+.article-note { padding: var(--sm); background: var(--panel); font-size: var(--caption); }
+
+@media (min-width: 56rem) {
+  .card-examples, .article-columns { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--md); }
+  .sample-card { aspect-ratio: 388 / 220; }
+  .sample-back { gap: var(--lg); }
+  .sample-back > p { width: 7rem; }
+  .article-steps > li { grid-template-rows: auto 1fr auto; }
+  .article-actions { grid-template-columns: repeat(2, auto); justify-content: space-between; }
+}
+
+.article-card-grid, .article-step-list { display: grid; gap: var(--lg); }
+.article-card-grid { list-style: none; margin: 0; padding: 0; gap: var(--md); }
+.article-card {
+  --article-thumbnail: 5rem;
+  display: grid;
+  grid-template-columns: var(--article-thumbnail) minmax(0, 1fr);
+  align-items: center;
+  gap: var(--sm);
+  padding: var(--sm);
+  border-block-end: var(--rule) solid var(--line);
+  border-radius: var(--radius-control);
+  background: var(--card-paper);
+}
+
+.article-card img { display: block; width: 100%; height: auto; }
+.article-card p { font-size: var(--caption); }
+.article-step-list > li { grid-template-rows: auto auto; }
+
+@media (min-width: 56rem) {
+  .article-card-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .article-card { grid-template-columns: minmax(0, 1fr); align-content: start; }
+}
+
+.bleed-overview { display: grid; gap: var(--md); }
+.diagram-trim { fill: none; stroke: var(--ink); }
+.diagram-tint { fill: var(--accent-soft); }
+.diagram-safe { stroke-dasharray: 4 3; }
+.diagram-arrows { stroke-width: 2; }
+.article-diagram .diagram-wordmark { font-size: 15px; font-weight: 700; }
+.guide-legend { display: grid; gap: var(--xs); list-style: none; margin: 0; }
+.guide-legend li { display: flex; align-items: center; gap: var(--xs); }
+.guide-legend span { flex: 0 0 var(--md); border-top: var(--rule) solid var(--accent); }
+.guide-legend .legend-trim { border-color: var(--ink); }
+.guide-legend .legend-safe { border-top-style: dashed; }
+
+@media (min-width: 56rem) {
+  .bleed-overview { grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); align-items: center; }
+  .bleed-overview .article-diagram { height: 11.25rem; }
+}
+
+.article-card-illustrated { --article-thumbnail: 3.75rem; }
+.article-card-icon {
+  display: block;
+  width: var(--article-thumbnail);
+  background: var(--accent-soft);
+  fill: none;
+  stroke: var(--accent);
+}
+
+.article-actions .checklist-return { display: none; }
+#checklist:target .article-actions .checklist-return { display: inline-flex; }
+#checklist:target .article-actions .guide-return { display: none; }
+#checklist:target .article-actions .checklist-return ~ .button-primary {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
